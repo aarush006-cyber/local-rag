@@ -1,0 +1,548 @@
+AI and RAG Engineering Reference Corpus
+
+This large synthetic text corpus is intended for experimenting with
+retrieval-augmented generation. It contains related concepts,
+definitions, distinctions, and engineering details so that different
+retrieval strategies can be tested.
+
+1. Artificial Intelligence
+
+Artificial Intelligence is the field of building systems that perform
+tasks associated with perception, reasoning, learning, planning,
+language understanding, and decision making. Narrow AI focuses on
+defined tasks, while general intelligence is a broader research concept.
+AI systems should be evaluated for accuracy, robustness, reliability,
+bias, calibration, and behavior under distribution shift.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+2. Machine Learning
+
+Machine Learning is a subset of Artificial Intelligence in which models
+learn patterns from data. Supervised learning uses labeled examples,
+while unsupervised learning discovers structure without target labels.
+Training, validation, and test sets support model fitting, model
+selection, and final evaluation. Overfitting occurs when a model
+performs well on training data but generalizes poorly.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+3. Linear Regression
+
+Linear regression predicts a continuous target using weighted input
+features. Ordinary least squares minimizes squared residuals. Mean
+absolute error measures average absolute error, root mean squared error
+emphasizes large errors, and R-squared compares explained variance with
+a mean-prediction baseline.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+4. Logistic Regression
+
+Logistic regression is commonly used for binary classification. It
+models probability using a sigmoid function. Accuracy may be misleading
+for imbalanced classes, so precision, recall, F1 score, ROC curves, and
+precision-recall curves can provide additional information.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+5. Decision Trees and Random Forests
+
+A decision tree recursively partitions data using feature conditions.
+Gini impurity and entropy are common split criteria. Random forests
+combine many trees trained with bootstrapped samples and feature
+randomness, usually improving generalization compared with a single
+tree.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+6. Support Vector Machines
+
+A support vector machine seeks a decision boundary with a large margin.
+Support vectors are the observations that strongly influence the
+boundary. The C parameter controls the trade-off between margin size and
+training errors. Kernel functions can represent nonlinear boundaries.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+7. Clustering
+
+Clustering organizes observations according to similarity. K-means
+alternates between assigning points to centroids and updating centroids.
+DBSCAN is density-based and can identify irregular clusters and noise.
+Silhouette score can help assess clustering structure.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+8. PCA
+
+Principal Component Analysis constructs orthogonal directions that
+capture variance. The first principal component captures the greatest
+possible variance under the method’s constraints. PCA is sensitive to
+feature scale, so standardization is often useful before applying it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+9. Deep Learning
+
+Deep learning uses neural networks with multiple layers. Training
+generally consists of a forward pass, loss calculation, backpropagation,
+and optimization. Learning rate, batch size, weight decay,
+initialization, architecture, and data quality influence training.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+10. Computer Vision and CNNs
+
+Convolutional neural networks are useful for image data. Convolutional
+filters learn local patterns such as edges and textures. Feature maps
+record filter responses. Padding affects spatial dimensions, stride
+controls movement, and pooling can reduce spatial resolution.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+11. Natural Language Processing
+
+Natural Language Processing includes classification, extraction,
+summarization, translation, question answering, and text generation.
+Tokenization converts text into model-readable units. Embeddings
+represent language as numerical vectors, while contextual models create
+representations influenced by surrounding tokens.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+12. Transformers
+
+Transformers rely heavily on attention mechanisms. Queries are compared
+with keys to produce attention weights over value vectors. Multi-head
+attention allows different representation subspaces to capture different
+relationships. Positional information represents token order.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+13. Large Language Models
+
+Large Language Models are neural models trained on large datasets.
+Autoregressive models predict the next token from preceding context.
+Instruction tuning, preference optimization, prompting, decoding
+parameters, and external tools influence behavior. Language models can
+still hallucinate.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+14. Embeddings and Semantic Search
+
+Text embedding models map text into vector spaces. Semantic search
+compares query vectors with stored document vectors. Cosine similarity,
+dot product, and Euclidean distance are common comparison methods.
+Embedding quality depends on the model, domain, preprocessing, chunk
+size, and language.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+15. Retrieval-Augmented Generation
+
+Retrieval-Augmented Generation combines information retrieval with
+language generation. Documents are loaded, divided into chunks,
+embedded, indexed, and searched using a user query. Retrieved evidence
+is inserted into a prompt and supplied to a language model. RAG has two
+major jobs: retrieval and generation.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+16. Chunking
+
+Chunking divides source documents into smaller units for indexing and
+retrieval. Fixed-size chunking uses character or token limits.
+Overlapping chunks repeat boundary content. Sentence-based chunking
+preserves sentence boundaries. Recursive chunking uses hierarchical
+separators. Semantic chunking groups text according to meaning. Chunk
+size creates a trade-off between context and retrieval precision.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+17. Vector Databases
+
+A vector database stores embeddings with identifiers, source text or
+references, and optional metadata. Vector systems support similarity
+retrieval. Exact search can be accurate but expensive at scale, while
+approximate nearest-neighbor indexes trade a small amount of recall for
+speed.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+18. Metadata Filtering
+
+Metadata filtering restricts retrieval using structured attributes such
+as source, date, page, author, department, language, or document type.
+Filtering can enforce access boundaries and improve precision, but
+incorrect metadata can reduce recall.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+19. BM25
+
+BM25 is a lexical retrieval method based on term frequency, inverse
+document frequency, and document length normalization. It is effective
+when exact terms, names, identifiers, and technical vocabulary matter.
+Dense retrieval and BM25 can complement each other.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+20. Hybrid Retrieval
+
+Hybrid retrieval combines dense semantic retrieval with lexical
+retrieval. Candidate rankings can be combined using score fusion or
+reciprocal rank fusion. Hybrid methods are useful when both semantic
+similarity and exact terminology matter.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+21. Reranking
+
+A reranker receives an initial candidate set and scores relevance more
+carefully. A common architecture retrieves many candidates cheaply and
+reranks them before selecting the final context. Reranking can improve
+top-of-list precision.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+22. Query Rewriting
+
+Query rewriting changes a user’s question into one or more
+search-friendly formulations. A rewrite can clarify references or add
+useful terminology. Multi-query retrieval can search several
+formulations and combine results, but rewrites must preserve the user’s
+intended meaning.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+23. Parent-Child Retrieval
+
+Parent-child retrieval indexes small child chunks for precise matching
+while returning a larger parent section for generation. This separates
+search granularity from generation context.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+24. Context Compression
+
+Context compression removes retrieved text that is not useful for the
+current question. It can extract relevant sentences or summarize
+passages. Compression can reduce prompt size but may accidentally omit
+critical evidence.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+25. RAG Prompting
+
+A RAG prompt should clearly separate instructions, retrieved context,
+and the user question. Retrieved documents should generally be treated
+as untrusted data because they may contain prompt injection attempts. A
+system can instruct the model to answer only from supplied evidence and
+to admit when evidence is insufficient.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+26. RAG Evaluation
+
+RAG evaluation should examine retrieval and generation separately.
+Retrieval metrics include recall at K, precision at K, mean reciprocal
+rank, and normalized discounted cumulative gain. Generation evaluation
+can consider correctness, faithfulness, relevance, completeness, and
+citation quality. A fixed evaluation set is essential for meaningful
+comparisons.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+27. Agentic RAG
+
+Agentic RAG allows a model or controller to choose retrieval operations
+and tools dynamically. An agent may search, inspect results, reformulate
+a query, call another tool, and synthesize evidence. This increases
+capability but also adds latency, cost, nondeterminism, and failure
+modes.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+28. MCP and Tools
+
+The Model Context Protocol provides standardized ways for AI
+applications to connect with tools and data sources. Tool schemas should
+clearly define parameters and permissions. Least privilege is important:
+a tool should receive only the access needed for its task.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+29. LLMOps
+
+LLMOps covers deployment, monitoring, evaluation, versioning,
+observability, latency measurement, token tracking, and cost management
+for language-model applications. Production RAG systems benefit from
+logging retrieval latency, retrieved chunk identifiers, model latency,
+errors, and evaluation results while respecting privacy.
+
+During debugging, inspect intermediate outputs such as chunks, retrieved
+passages, similarity scores, and final prompt context instead of looking
+only at the final answer.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+30. Security
+
+AI applications should treat user input, retrieved documents, external
+data, and tool outputs as potentially untrusted. Common risks include
+prompt injection, data leakage, excessive permissions, malicious
+documents, and secret exposure. API keys should be stored outside source
+code and excluded from source control.
+
+A powerful language model cannot fully compensate for poor retrieval. If
+the correct evidence never reaches the generation stage, the final
+answer may remain incorrect.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+31. AI Engineering
+
+A strong AI engineering project starts with a measurable problem. Define
+inputs, outputs, constraints, evaluation criteria, latency expectations,
+and cost before choosing components. Modular pipelines make
+experimentation easier because chunking, embedding, retrieval,
+reranking, prompting, generation, and evaluation can be changed
+independently.
+
+A good baseline should be kept unchanged so later techniques can be
+compared fairly against it.
+
+A practical engineering lesson is to change one component at a time when
+running experiments. Otherwise an improvement cannot easily be
+attributed to a specific change.
+
+Retrieval Experiment Notes 1
+
+Retrieval experiment 1 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
+
+Retrieval Experiment Notes 2
+
+Retrieval experiment 2 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
+
+Retrieval Experiment Notes 3
+
+Retrieval experiment 3 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
+
+Retrieval Experiment Notes 4
+
+Retrieval experiment 4 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
+
+Retrieval Experiment Notes 5
+
+Retrieval experiment 5 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
+
+Retrieval Experiment Notes 6
+
+Retrieval experiment 6 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
+
+Retrieval Experiment Notes 7
+
+Retrieval experiment 7 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
+
+Retrieval Experiment Notes 8
+
+Retrieval experiment 8 should compare the evidence returned for a user
+question with the evidence that a human considers relevant. Questions
+about embeddings, chunking, vector search, RAG, transformers,
+evaluation, and model behavior should be checked for both semantic
+relevance and exact terminology. The experiment should record top-K
+results and compare the results after changing one retrieval component.
